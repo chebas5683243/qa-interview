@@ -1,0 +1,452 @@
+[
+  {
+    "id": "8b8048ea-a637-4c48-8287-be12b6c4b99d",
+    "title": "What is Node.js?",
+    "answer": "Node.js is a runtime environment for executing a Javascript code on the server-side. It is neither a language nor a framework.\n",
+    "tags": []
+  },
+  {
+    "id": "b86cf123-a6ba-47f7-9e19-7a611c826820",
+    "title": "How Node is a runtime environment on server side? What is V8?",
+    "answer": "Javascript run and is executing in browser. Every browser has a JS engine, for example Chrome has the V8 engine, which runs the Javascript code. Node.js is a wrapper of the V8 Engine, so with it JS can run outside the browser.",
+    "tags": []
+  },
+  {
+    "id": "d50c4e0c-ff9d-47bc-ad30-9451658ea179",
+    "title": "What is the difference between Runtime environment and framework?",
+    "answer": "Runtime environment focuses on providing the necessary infraestructure for code execution, including services like memory management and I/O operations.\nFrameworks simplify the development process by offering a set of tools, libraries and best practices, which are opinionated.",
+    "tags": []
+  },
+  {
+    "id": "2aacf5b5-85d0-4de3-8815-2818746e850b",
+    "title": "What is the difference between Node.js and Express.js?",
+    "answer": "Node.js is a runtime environment that allows the execution of JS code server-side.\nExpress.js is a framework built on top of Node.js\n- Routing system\n- Middleware support, etc.",
+    "tags": []
+  },
+  {
+    "id": "ec2f16d6-984b-4d1d-aa94-c0804140280e",
+    "title": "What are the differences between Client-side (browser) and Server-side (Node.js)?",
+    "answer": "Client-side:\n- Runs on the browser\n- HTML, CSS and JS\n- Document, window, navigator, event objects\n- Handles UI display, interactions and client-side logic.\n\nServer-side:\n- Runs on the server\n- JS\n- No global variables from browser\n- Handles business logic, data storage, authentication, authorization, etc",
+    "tags": []
+  },
+  {
+    "id": "0c5978ea-2771-45db-b43f-13609509976c",
+    "title": "What are the 7 main features of Node.js?",
+    "answer": "1. Single Threaded\n2. Asynchronous\n\nEnables handling multipe concurrent requests and can do non blocking execution of thread\n\n3. Event-driven\n\nEfficient handling events for bidireaction communication.\n\n4. V8 JS Engine\n\nWith V8, Node.js executes code fast\n\n5. Cross-Platform\n\nEnhancing flexibility\n\n6. NPM\n7. Real-time capabilities",
+    "tags": []
+  },
+  {
+    "id": "880ed77a-526d-42d8-a8d7-78ea99fc2a1f",
+    "title": "What is Single Threaded Programming?",
+    "answer": "Single-threaded programming refers to a programming model where a program executes one instruction at a time, in a sequential manner, within a single thread of execution. In this model, there is only one flow of control through the program's code, and instructions are executed one after the other, typically in the order they appear in the code, which can sometimes block the program.",
+    "tags": []
+  },
+  {
+    "id": "80bf09fc-743b-4e0c-ae9c-bac7ec75c97b",
+    "title": "What is Synchronous Programming?",
+    "answer": "With a single thread, we can achieve both synchronous and asynchronous operations. Synchronous approach takes more time. It is a blocking approach.",
+    "tags": []
+  },
+  {
+    "id": "dd8eb94a-6e5b-462c-91ab-c8761c02fdb8",
+    "title": "What is multi-threaded programming?",
+    "answer": "Multi-threaded programming involves creating and managing multiple threads within a single process to perform concurrent tasks. Each thread represents a separate flow of execution within the same program, allowing different parts of the program to execute independently and concurrently.",
+    "tags": []
+  },
+  {
+    "id": "740e20f4-a46d-4e3c-a0a3-92e6990fab97",
+    "title": "What is Asynchronous programming?",
+    "answer": "In Node.js, asynchronous flow can be achieved by its single-threaded, non-blocking and event-drive architecture.\nA thread is initiating all tasks, but not waiting for its completion.\nIts the a paradigm that allows tasks to be run independently of the main program flow, enabling better utilization of resources and improving overall efficiency. Tasks can start, execute and complete in a non-blocking manner.\n- I/O operations\n- Network request, etc.\n",
+    "tags": []
+  },
+  {
+    "id": "de527c21-1dcf-42ff-9554-ddb49c058546",
+    "title": "What are Events, Event Emitter, Event Queue, Event Loop and Event Driven?",
+    "answer": "- Events: signals that something has happend in a program.\n- Event Emitter: create or emmit events.\n- Event queue: Events emitted queued (stored) in event queue.\n- Event handler (Event listener): Function that responds to specific events (written by us)\n- Event Loop: The event loop picks up event from the event queue and executes them in the order they were added.\n- Event driven architecture: It means operations in Node are drive or based by events.",
+    "tags": []
+  },
+  {
+    "id": "9f9bf766-94ac-47b8-adba-024cd7a742b3",
+    "title": "What are the disadvantages of node? When to use and when not to use Node?",
+    "answer": "When?\n- Real-time applications like chats and collaborative tools\n- Scalable RESTful APIs\n- Good with microservices-based architechture.\n\nNot When?\n- CPU-intensive tasks: video processing, data encryption",
+    "tags": []
+  },
+  {
+    "id": "f514e6ce-5036-4d0f-9290-454c032f137a",
+    "title": "What are Modules in Node? What is the difference between a function and module?",
+    "answer": "A module contains a specific funcionality that can be easily reused within a Node.js application.\nIdeally in node.js, a Javascript file can be treated as a module.\n\nA module is a broader concept that encapsulates funcionality, while a function is a specific set of instructions within that module.\nModule can contain multiple functions and variables.",
+    "tags": []
+  },
+  {
+    "id": "e4820320-557f-4e34-bcc0-fd07ed05fac0",
+    "title": "ESM vs CJS",
+    "answer": "TODO",
+    "tags": []
+  },
+  {
+    "id": "615ee82f-9c76-4d74-b77f-81f927477193",
+    "title": "How many ways are there to Export a module?",
+    "answer": "function someFunction() {}\nmodule.exports.someFunction = someFunction;\n\nexports.someFunction = function () {}",
+    "tags": []
+  },
+  {
+    "id": "3ad655e9-60e1-4194-bdec-62b8642f2bf8",
+    "title": "What is a module wrapper function?",
+    "answer": "In Node.js, each module is wrapped in a function called the \"module wrapper function\" before it is executed.",
+    "tags": []
+  },
+  {
+    "id": "8201f831-300c-441f-90af-90ff4475f421",
+    "title": "What are the Core Modules in Node?",
+    "answer": "These are already present modules in Node.js which provide essential functionalities.\n\n- fs: Provide a set of methods for interacting with the file system.\nfs.readFile(fileName, format, callback)\nfs.writeFile(fileName, content, format, callback)\n\n- path: Provides utilities for joining, resolving, parsing, formatting, normalizing and manipulating paths.\npath.join(\"dir\", \"file\")\npath.parse(\"path\")\n\n- OS: Provides a set of methods for interacting with the operating system.\nFor deploying cross-platform\n\n- http: For creating an HTTP server that listens to server ports and gives a response back to the client.\n\n- util: For utilities\n",
+    "tags": []
+  },
+  {
+    "id": "9abcf565-98cf-4d38-8dbe-9bb645624304",
+    "title": "What are the advantages of using Express.js with Node.js?",
+    "answer": "1. Simplified Web Development\nExpress.js provides a lightweight framework that simplifies the process of building web applications in Node.js.\n\n2. Middleware Support\nEasy integration of middleware functions into application's request-response cycle.\n\n3. Flexible Routing System\nDefining routes for handling different HTTP methods and URL patterns is easy.\n\n4. Template Engine Integration\nExpress.js supports various template engines making it easy to generate dynamic HTML content on the server side.",
+    "tags": []
+  },
+  {
+    "id": "2138aa91-7cca-429e-8d2a-02d91c2d1a15",
+    "title": "What is Middleware in Express.js and when to use them?",
+    "answer": "A middleware in Express.js is a function that handles HTTP requests, performs operations and passes control to the next middleware. Used in the request pipeline.\n- Logging\n- Authentication\n- Authorization\n- Error Handling\n- Parsing Request Body\n- Caching",
+    "tags": []
+  },
+  {
+    "id": "b7df488a-91ea-4923-b0c2-8b58c85d365b",
+    "title": "What is Request Pipeline in Express?",
+    "answer": "The request pipeline in Express.js is a series of middleware functions that handle incomming HTTP requests and pass control to the next function.",
+    "tags": []
+  },
+  {
+    "id": "5ad88be2-93e4-460a-a123-93319e1bc297",
+    "title": "What are the types of middleware in Express.js?",
+    "answer": "- Application-level middleware -> app.use(express.json());\n- Router-level middleware\n- Error-handling middleware\n- Built in middleware\n- Third-party middleware",
+    "tags": []
+  },
+  {
+    "id": "a1176180-371b-4d1e-9f05-92ee9d51d12c",
+    "title": "How to server static files from Express.js?",
+    "answer": "app.use(express.static(\"public\"))",
+    "tags": []
+  },
+  {
+    "id": "8e118aa2-7569-437b-b965-22041c065bbc",
+    "title": "What are the advantages of using middleware in Express.js?",
+    "answer": "1. Modularity\nMiddleware allows you to modularize your application's functionality into smaller, self-contained units. Each middleware function can handle a specific task concern such as logging, authentication or error handling.\n\n2. Reusability\nMiddlewares can be reused at multiple places and that makes application code easier to maintain.\n\n3. Improved Request Handling\nMiddleware functions have access to both the request and response objects which enables you to perform validations on request or modify the response before sending it back to the client.\n\n4. Flexible Control Flow\nCan be applied to all routes or selectively to specific routes.",
+    "tags": []
+  },
+  {
+    "id": "32cf2129-b0aa-4f77-b168-c22f5a32bb6b",
+    "title": "What is Routing in Express.js?",
+    "answer": "Routing is the process of directing incoming HTTP requests to the appropiate handler function.",
+    "tags": []
+  },
+  {
+    "id": "75995532-4d8e-4c10-a764-c3c34735634b",
+    "title": "What are Router object and Router Method and how to implement then?",
+    "answer": "Router object is a mini version of an Express app which is use for handling routes.\nconst router = express.Router();\n\nRouter methods are functions provided by the router object\nrouter.get(\"/\", () => {})",
+    "tags": []
+  },
+  {
+    "id": "c6d12f99-4b04-4483-be6c-27b78ed898ac",
+    "title": "What are Template Engines in Express.js?",
+    "answer": "Template engines are libraries that enable developers to generate dynamic HTML content by combining static HTML templates with data.\n- Example: Pug",
+    "tags": []
+  },
+  {
+    "id": "c5fd93b2-cc70-4420-a307-f1d3a9621f89",
+    "title": "What is REST and RESTful API?",
+    "answer": "- Representational State Transfer, is an architecture style for designing networked applications\n- Set of guidelines for creating APIs",
+    "tags": []
+  },
+  {
+    "id": "f47cf77f-42a6-484d-a494-9ed80eb80b26",
+    "title": "What are Top 5 REST guidelines and the advantages of them?",
+    "answer": "1. Separation of client and server\n2. Stateless\n3. Uniform interface, easy to understand an to use\n4. Cacheable\n5. Layered system, like MVC",
+    "tags": []
+  },
+  {
+    "id": "24c0b410-d77f-43ee-96a7-229d1e7990e8",
+    "title": "What is the difference between REST API and SOAP API?",
+    "answer": "REST API\n- Architectural style\n- HTTP/HTTPS\n- JSON, XML\n- Stateless\n- HTTP error status codes\n- Lightweight and faster\n\nSOAP API\n- Simple Object Access Protocol\n- HTTP, SMTP, etc\n- XML\n- Stateful or stateless\n- Own error mechanism\n- Slower due to XML processing",
+    "tags": []
+  },
+  {
+    "id": "08122810-ec51-456c-94b3-5c21b4cee2db",
+    "title": "What are HTTP verbs and HTTP Methods?",
+    "answer": "Set of actions that a client can take on a resource.",
+    "tags": []
+  },
+  {
+    "id": "7bafb7de-59cc-4f38-a0e3-3e5620d35045",
+    "title": "Explain the concept of Idempotence in RESTful APIs",
+    "answer": "Idempotence meaning performing an operation mutilpe times should have the same outcome as performing it once. - GET\n- PUT\n- DELETE\n\nNon-idempotent: POST",
+    "tags": []
+  },
+  {
+    "id": "9afa0dc6-f0d6-40ed-b55d-b578c01c0b87",
+    "title": "What are the role of status code in RESTful APIs?",
+    "answer": "Used to convey the results of a client's request\n\n1xx: Info\n- 100: Continue\n\n2xx: Sucess\n- 200: OK\n- 201: Created\n- 202: Accepted\n- 204: No content\n\n3xx: Redirection\n- 300: Multiple choices.\n- 308: Permanent redirect.\n\n4xx: Client error\n- 400: Bad Request\n- 401: Unauthorized\n- 403: Forbidden\n- 404: Not Found\n- 405: Method not allowed\n\n5xx: Server Error\n- 500: Internal Server Error\n- 501: Not implemented\n- 502: Bad Gateway\n- 503: Service unavailable",
+    "tags": []
+  },
+  {
+    "id": "cfc266a0-03c9-4b79-bfd0-88d73dd09f4e",
+    "title": "What is CORS in RESTful APIs?",
+    "answer": "Cross Origin Resource Sharing is a security feature implemented in web browsers that restricts web pages or scripts from making requests to a different domain that the one that served the web page.\n\nOK:\n- Same domain\n\nNOT OK:\n- Different domain\n- Different subdomain\n- Different protocol (HTTP/HTTPS)\n- Different port",
+    "tags": []
+  },
+  {
+    "id": "60f0457e-b7d8-4a3c-831c-8446a82ad33b",
+    "title": "What are serialization and deserialization?",
+    "answer": "Serialization is the process of converting an object into a format that can be stored, transmitted, or reconstructed later.\nDeserialization is the process of converting serialized data, such as binary/XML/json back into an object.",
+    "tags": []
+  },
+  {
+    "id": "48cad522-ac50-4b61-86ef-bb9b5c1e1447",
+    "title": "What is a typical structure of a REST API?",
+    "answer": "- db\n- routers\n- middlewares\n- domains\n- controllers\n- validators\n- services\n- repositories\n- listeners\n- utils",
+    "tags": []
+  },
+  {
+    "id": "1baa8348-f40c-4cf9-b954-1f869bb946f1",
+    "title": "What are the types of authentication in Node.js?",
+    "answer": "1. Basic Authentication (username and password)\n2. API Key Authentication\n3. Token-based authentication (JWT)\n4. Multi-factor Authentication (MFA)\n5. Ceritifcate based-authentication",
+    "tags": []
+  },
+  {
+    "id": "76999a8c-d410-4d2b-899e-cab569bfe48c",
+    "title": "What is Basic Authentication?",
+    "answer": "In Basic Auth, the user passes their credentials on post request. At the API, credentials are verified and response is sent back.\nCredentials are sent on plain text over the network, so it is not considered a secure method of authentication.",
+    "tags": []
+  },
+  {
+    "id": "7c8e4d4c-7ca9-45a0-b4de-9e6c7ad750ac",
+    "title": "What is the role of Hashing and Salt in securing passwords?",
+    "answer": "Hashing is a process of converting a password into a fixed-size string of characters using a mathematical algorithm.\nSalting is a techinque used to add additional random data to each password before hashing it.",
+    "tags": []
+  },
+  {
+    "id": "c8b49e1e-e13a-4cdb-861f-04d720e92975",
+    "title": "What is API Key Authentication?",
+    "answer": "The API owner will share an API Key with the users and this key will authenticate the users of that API.\nThese can be shared or stolen, not suitable for all scenarios.",
+    "tags": []
+  },
+  {
+    "id": "7838a5f9-3893-4192-8e37-e3c011993b32",
+    "title": "What is Token based and JWT authentication?",
+    "answer": "After user sends its credentials, the server responses with a token, that will be sent on the headers of all following request.",
+    "tags": []
+  },
+  {
+    "id": "d1c73e06-56d2-4016-8ffe-276d83bab953",
+    "title": "What are the parts of JWT Token?",
+    "answer": "- Header: algorithm and type of token\n- Payload: claims, information of user\n- Signature: verifiy the integrity of the token",
+    "tags": []
+  },
+  {
+    "id": "95ee2992-f056-4b3a-9ae3-07f606613603",
+    "title": "Difference between var, let and const?",
+    "answer": "Var\n- Function scope\n- Hoisted an initialized as undefined\n- En node no se agrega como parte del objeto global\n\nLet\n- Block scope\n- TDZ\n\nConst\n- Block scope\n- Cannot be reasigned\n- TDZ",
+    "tags": []
+  },
+  {
+    "id": "4b4aa601-7205-4efa-853d-6f326e5330d2",
+    "title": "What is closure?",
+    "answer": "A closure in Javascript is a combination of a function and the lexical environment\n- Can be used for data modification with data privacy (encapsulation)\n- Persistent data and state\n- Code Reusability",
+    "tags": []
+  },
+  {
+    "id": "2298a8dd-20fe-450c-98c3-8ac5f83095fc",
+    "title": "What is Event Delegation?",
+    "answer": "Event Delegation is a technique where yu attach a single event handler to a parent element to handle events on its child elements.",
+    "tags": []
+  },
+  {
+    "id": "b359ff38-f40e-4722-9c6b-c68c306b04dd",
+    "title": "What is Event Bubbling in JS?",
+    "answer": "Event bubbling is the process in Javascript where an event triggered on a child element propagates up the DOM tree, triggering event handlers on its parent elements",
+    "tags": []
+  },
+  {
+    "id": "fc3770d7-2df6-4eaf-a936-fcc98a1578a4",
+    "title": "What are call, apply and bind methods?",
+    "answer": "Call, apply and bind are three methods in JS that are used to work with functions and control how they are invoked and what context they operate in.\nThese methods provide a way to manipulate the this value and pass arguments to functions.",
+    "tags": []
+  },
+  {
+    "id": "10677eeb-d354-4e42-ac1e-43635ff5a3aa",
+    "title": "What are the data types in JS?",
+    "answer": "Primitive\n- Bigint\n- Numbers\n- Strings\n- Booleans\n- Undefined\n- Null\n- Symbols\n\nNon-primative\n- Object\n- Array\n- Function\n- Date\n- RegExp",
+    "tags": []
+  },
+  {
+    "id": "12b4ac01-caa1-423d-9f68-2f77d2bb4849",
+    "title": "What is type coercion?",
+    "answer": "Type coercion is the automatic conversion of values from one data type to another during certain operations or comparisons",
+    "tags": []
+  },
+  {
+    "id": "bc380414-a01c-4fe6-933e-dfd30fd4f5a9",
+    "title": "What is function currying?",
+    "answer": "Currying in JS transfroms a function with multiple arguments into a nested series of functions, each taking a single argument.\n- Reusability\n- Modularity\n- Specialization",
+    "tags": []
+  },
+  {
+    "id": "1acdf22d-4dbc-4ab0-99f4-96d38eb99098",
+    "title": "What is memoization?",
+    "answer": "Memoization is an optimization technique used to speed up programs by caching the results of expensive function calls and returning the cached result when the same inputs occur again.\n\n  function myMemoize(fn, context) {\n    const cache = {};\n    return function (...args) {\n      var argsKey = JSON.stringify(args);\n      if (cache[argsKey]) {\n        return cache[argsKey];\n      } else {\n        cache[argsKey] = fn.call(context || this, ...args);\n        return cache[argsKey];\n      }\n    };\n  }",
+    "tags": []
+  },
+  {
+    "id": "6e138d7e-911c-4992-8251-2a5d214839cd",
+    "title": "What is DOM?",
+    "answer": "DOM (Document Object Model) represents the web page as a tree like structure which allows Js to dynamically access and manipulate the content and structure of a web page",
+    "tags": []
+  },
+  {
+    "id": "7ab699d7-940c-4dbd-9371-0972982d7704",
+    "title": "What is Virtual DOM?",
+    "answer": "React uses virtual DOM to efficiently update the UI without re-render the entire page, which helps improve performance and make the application more responsive.\nLightweight copy of the DOM.",
+    "tags": []
+  },
+  {
+    "id": "2297d062-4487-4262-ac52-867fdb8b7fcb",
+    "title": "What is a React Component?",
+    "answer": "It is a reusable building block for creating interfaces",
+    "tags": []
+  },
+  {
+    "id": "08a09ee5-bac7-43fb-bcbb-51e6d6e26dfe",
+    "title": "What is JSX?",
+    "answer": "JSX stands for JavaScript XML. It's a syntax extension for JavaScript often used with React to describe what the UI should look like. It is converted to JS via Babel, which transpile syntax.",
+    "tags": []
+  },
+  {
+    "id": "814d5c5c-eb8a-42dd-9e87-de3dd6e776b4",
+    "title": "What are component life cycle in React?",
+    "answer": "Mounting Phase:\n\n- constructor\n\n- static getDerivedStateFromProps()\nThis method is called before rendering when new props are received. It's used to update state based on props changes.\n\n- render\n\n- componentDidMount()\nExecuted after the component is updated in the DOM. It's commonly used for network requests based on prop changes or updating the DOM in response to props or state changes.\n\nUpdating Phase:\n\n- getDerivedStateFromProps()\n\n- shouldComponentUpdate()\nDetermines if the component should re-render based on changes in props or state.\n\n- render\n\n- getSnapshotBeforeUpdate()\n\n- componentDidUpdate()\n\nUnmounting\n\n- componentWillUnmount()\nInvoked immediately before a component is unmounted and destroyed. It's used for cleanup tasks like removing event listeners or cancelling network requests.",
+    "tags": []
+  },
+  {
+    "id": "a3faeb28-b685-4c12-bf5f-7e03763ad3b3",
+    "title": "What is Code Splitting in React?",
+    "answer": "Code Splitting is a technique to split the Javascript bundle into smaller chunks, which are loaded on-demand.\n- React.lazy() to lazily import components\n- Wrap component in Suspense to handle loading\n- Configure Webpack for dynamic imports (out of the box from vite)\n\nlazy(() => import(\"..\").then(m => ({default: m.MyComponent})))\n",
+    "tags": []
+  },
+  {
+    "id": "ad18118c-f268-49f4-b89d-60e0d4f05b10",
+    "title": "What are the Pros and cons of Code Splitting?",
+    "answer": "Pros\n1. Faster Initial Load Time\n2. Optimized Bandwith usage\n3. Improved caching\n4. Parallel Loading\n\nCons\n1. Increase complexity\n2. Tooling dependencies: webpack, babel\n3. Potential runtime errors\n4. Increase number of requests\n5. Learning curve",
+    "tags": []
+  },
+  {
+    "id": "e627ff87-9055-43ce-ab20-ac4e206c01ee",
+    "title": "What is a Higher Order Component? HOC",
+    "answer": "Higher-order components (HOCs) are functions that take a component and return a new component with enhanced functionality. They are a powerful pattern in React for code reuse, logic abstraction, and composability.\n- Code Reuse\n- HOCs are useful for implementing cross-cutting concerns such as logging, authentication, authorization, or tracking without cluttering the components themselves.",
+    "tags": []
+  },
+  {
+    "id": "fe65d4c8-c956-482d-a65e-74a3e4871e30",
+    "title": "What is GraphQL?",
+    "answer": "GraphQL is a query languague for APIs and a runtime for executing those queries with your existing data.",
+    "tags": []
+  },
+  {
+    "id": "24619dc3-2097-4aee-8c7a-464659cbbbf9",
+    "title": "What is the use of React Profiler?",
+    "answer": "React Profiler is a set of tools in React that allows developers to profile (analyze) the performance of a React application.",
+    "tags": []
+  },
+  {
+    "id": "f4f7946b-1e79-4060-8a66-4d041dd34227",
+    "title": "How to set cache data using native tools?",
+    "answer": "res.set('Cache-Control', 'public, max-age=3600');\n\nfetch(\"some.json\", {cache: \"only-if-cached\"})\n  .then(data => console.log(data))\n  .catch(err => console.log(err));\n\nfetch(url, {\n  method: \"POST\", // or 'PUT'\n  body: JSON.stringify(data), // data can be `string` or {object}!\n  headers: {\n    \"Content-Type\": \"application/json\",\n  },\n})\n\nvar formData = new FormData();\nvar fileField = document.querySelector(\"input[type='file']\");\n\nformData.append(\"username\", \"abc123\");\nformData.append(\"avatar\", fileField.files[0]);\n\nfetch(\"https://example.com/profile/avatar\", {\n  method: \"PUT\",\n  body: formData,\n})\n\nfunction fetchQuestions() {\n    // Simulate asynchronous behavior using setTimeout\n    return new Promise((resolve, reject) => {\n        setTimeout(() => {\n            // Simulate successful response\n            resolve(questionsArray);\n            // Simulate error response\n            // reject(new Error(\"Failed to fetch questions\"));\n        }, 1000); // Simulate a delay of 1 second\n    });\n}",
+    "tags": []
+  },
+  {
+    "id": "dbe2cfa9-8963-49b8-b6ce-efe723d63c93",
+    "title": "What is BEM?",
+    "answer": "BEM (Block Element Modifier) is a CSS naming convention and methodology for writing maintainable and scalable CSS code. It involves organizing CSS classes into three categories.\n- .card__title--large",
+    "tags": []
+  },
+  {
+    "id": "6e741597-7e44-4180-a528-f17b6a96ccbe",
+    "title": "How to declare a variable in CSS?",
+    "answer": "/* Declare a variable */\n:root {\n  --main-color: #3366ff;\n}\n\n/* Use the variable */\n.element {\n  color: var(--main-color);\n}",
+    "tags": []
+  },
+  {
+    "id": "e7f0ed4d-458d-4064-9516-9cad89509f17",
+    "title": "What is CSS specificity?",
+    "answer": "CSS specificity is a set of rules that determine which CSS styles are applied to an element when multiple conflicting styles are specified. \n\nInline Styles: Applied directly to elements using the style attribute.\nID Selectors: Target elements by their ID (#my-element).\nClass, Attribute, and Pseudo-Class Selectors: Target elements by class, attribute, or pseudo-class (.my-class, [type=\"text\"], :hover).\nElement and Pseudo-Element Selectors: Target elements or pseudo-elements (div, ::before).\nUniversal Selectors and Combinators: Target all elements or use combinators (*, >, +, ~).",
+    "tags": []
+  },
+  {
+    "id": "51b48269-d8f5-4dbb-b57b-f6169582dfa0",
+    "title": "What are the differences between ESM vs CJS?",
+    "answer": "ESM is the official module system in JavaScript as specified in ECMAScript 6 (ES6) and later versions.\n- ESM is statically analyzable. Tree-shakeable\n- Named and default exports\n- Async loading\n\nCJS is a module system commonly used in Node.js and is the default module format in Node.js before the introduction of ESM support.\n- Compatibility\n\n",
+    "tags": []
+  },
+  {
+    "id": "6a34ae7f-1fc4-4351-b333-76816bdf18b6",
+    "title": "What are the differences between Proxy and Reverse Proxy?",
+    "answer": "Proxy:\nA proxy server acts as an intermediary between a client and one or more servers.\nWhen a client makes a request to access a resource, the request is first sent to the proxy server, which then forwards the request to the destination server.\n\nReverse Proxy:\nA reverse proxy server sits between clients and one or more backend servers.\nWhen a client makes a request, it is received by the reverse proxy, which then routes the request to the appropriate backend server.",
+    "tags": []
+  },
+  {
+    "id": "a5a508e5-ad0b-449e-9edd-50ac17d8ce08",
+    "title": "How to read files from Node.js?",
+    "answer": "const fs = require('node:fs');\ntry {\n  const data = fs.readFileSync('/Users/joe/test.txt', 'utf8');\n  console.log(data);\n} catch (err) {\n  console.error(err);\n}",
+    "tags": []
+  },
+  {
+    "id": "f173d74f-f3c4-49c6-bd68-ea69d598ca47",
+    "title": "What is AWS Lambda?",
+    "answer": "AWS Lambda is a serverless computing services that allows you to run code without provisioning or managing servers. It can scale in response of traffic.\nIt creates a zip archive, which has the app code and dependencies.\nIt automatically scales horizontally to handle incoming request.",
+    "tags": []
+  },
+  {
+    "id": "f52b9ea3-977c-49fa-ad59-0ee076588d16",
+    "title": "What are some design patterns?",
+    "answer": "CREATIONAL\n\n1. Factory\nThe factory pattern simplifies object creation by using factory methods or functions to create instances based on parameters or conditions. It encapsulates object creation logic, promoting flexibility and abstraction, and helps decouple client code from implementation details.\n\n2. Builder\nThe builder pattern is a creational design pattern that separates the construction of a complex object from its representation. It allows the creation of an object step by step, with the ability to customize its construction process.\n\n3. Singleton\nThe singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. It is commonly used when exactly one object is needed to coordinate actions across the system.\n\nBEHAVIORAL\n\n4. Observer\nThe observer pattern is a behavioral design pattern that defines a one-to-many dependency relationship between objects. In this pattern, when the state of one object (the subject or observable) changes, all its dependents (observers) are notified and updated automatically.\n\n5. Iterator\nThe iterator pattern is a behavioral design pattern that provides a way to access the elements of a collection sequentially without exposing its underlying representation. It allows you to traverse a collection of elements without needing to know the internal structure of the collection.\n\nSTRUCTURAL\n\n6. Adaptar\nThe adapter pattern is a structural design pattern that allows objects with incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, enabling them to collaborate seamlessly without requiring changes to their existing code\n\n7. Facade\nThe facade pattern is a structural design pattern that provides a simplified interface to a complex system of classes, libraries, or subsystems. It encapsulates a set of interfaces and interactions within a single higher-level interface, making it easier to use and understand.",
+    "tags": []
+  },
+  {
+    "id": "97e592cf-0c52-4e14-84e9-20b6d4418071",
+    "title": "What is the open close principle?",
+    "answer": "It is a principle for a class. It says that all classes have to be open for extension and closed for modifications.",
+    "tags": []
+  },
+  {
+    "id": "7f8486a6-2f47-48d8-89db-8994d89fc9f1",
+    "title": "What is SQS?",
+    "answer": "Amazon SQS is a fully managed message queuing services which allows you to decouple and scale microservices, distributed systems and serverless applications.\nSQS is best suited for asynchronous messaging and decoupling systems, SNS is best suited for real-time messaging and notifications, and EventBridge is best suited for real-time event-driven architectures and connecting different services.",
+    "tags": []
+  },
+  {
+    "id": "c316dfa4-511b-4bb7-bae7-d9687df4dd3b",
+    "title": "What is visibility timeout in SQS?",
+    "answer": "Visibility timeout is a parameter used in Amazon SQS  to control how long a message is invisible to other consumers after it has been retrieved by one consumer. Whenever a message is being proccesed another consumer can not see that particular message.\nAWS recommends twices the timeout of lambda.\n\nMessage retention: 14 days\nMessage size: 256kb, if more, store the message in AWS S3 and have the key in the message.\nDelivery delay: Delivery delay is a feature in message queuing systems that allows you to delay the delivery of messages after they are sent to a queue. It enables you to control when messages become available for consumption by consumers.\nLong polling: for example 20 sec, to save cost\n\nTypes\nStandard: Best-effort ordering (notifications)\nFifo: Preserve message ordering (financial transactions)\nDLQ: Dead letter queue stores failed events from the consumer into an SQS\n\nLimitations/Dowsides: No real-time messaging service. Message delivery not guaranteed",
+    "tags": []
+  },
+  {
+    "id": "3a612135-517d-4971-8d1b-816645fd108e",
+    "title": "What is DynamoDB?",
+    "answer": "Amazon DynamoDB is a fully managed NoSQL database service provided by AWS.\nA key-value database is a type of NoSQL (Not Only SQL) database that stores data as a collection of key-value pairs. In a key-value database, each data record (or \"document\") is uniquely identified by a key, and the associated value is the data associated with that key.\n\nHigh availabity due to replication of data across mutilpe Availability Zones.\nTables -> items -> atrributes -> keys\n- Primary key or partition key\n- Sort key (sort + partition = composite key)\n\nDynamoDB uses a provisioned throughput model for read and write capacity. it scales automatically\nDynamoDB streams capture changes to items in a tble and allow for real-time processing of these changes",
+    "tags": []
+  },
+  {
+    "id": "f0e8460d-cf67-4b6c-8355-ce12b0420d9f",
+    "title": "What is RedisDB?",
+    "answer": "Redis is an open-source, in-memory data structure store used as a database, cache, and message broker. It supports various data types such as strings, lists, sets, hashes, and more.\n\nRedis offers high performance, built-in data structures, persistence options, pub/sub messaging, Lua scripting, clustering, and transactions.\n\nSET is an unordered collection of unique elements, while ZSET is an ordered collection of unique elements with associated scores used for ranking.\n\nRedis pub/sub allows clients to subscribe to channels and receive messages published to those channels by other clients. It's commonly used for building real-time messaging systems and event-driven architectures.\n\nconst redis = new Redis({\n    host: 'your-redis-host',\n    port: 6379, // default Redis port\n    password: 'your-redis-password' // if Redis requires authentication\n});",
+    "tags": []
+  },
+  {
+    "id": "bf6f6e68-dcb3-4b6f-a259-834dc60b791d",
+    "title": "What is Streaming?",
+    "answer": "Streaming in Node.js refers to the ability to process data in chunks as it becomes available, rather than waiting for the entire data to be loaded into memory. It's particularly useful for handling large volumes of data efficiently and for scenarios where you want to start processing data before it's fully available or when you want to avoid loading the entire dataset into memory at once.",
+    "tags": []
+  }
+]
